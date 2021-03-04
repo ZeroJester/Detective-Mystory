@@ -19,11 +19,22 @@ public:
 	int getCharisma();
 	void setIntimidation(float theIntimidation);
 	float getIntimidation();
-
-//protected:
+	void setPerseption(float _perseption);
+	float getPerseption();
+	void setAggressionLevel(string _Agro);
+	string getAggressionLevel();
+	//void setTotalSkillPoints(int total);
+	//int getTotalSkillPoints();
+	
+protected:
 	int Charisma;
 	int INT;
 	float IntimidationPercent;
+	bool isEthical;
+	string aggressionLevel;
+	bool isLucky;
+	float Perseption;
 
+	//int TotalSkillPoints;
 };
 

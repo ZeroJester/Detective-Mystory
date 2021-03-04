@@ -11,6 +11,8 @@ DetectiveStates::DetectiveStates()
 		Charisma = 7;
 		Age = 40;
 		Name = "Mark";
+		isEthical = true;
+		isLucky = false;
 }
 
 int DetectiveStates::getINT()
@@ -39,5 +41,37 @@ void DetectiveStates::setIntimidation(float theIntimidation)
 {
 	IntimidationPercent = theIntimidation;
 }
+
+float DetectiveStates::getPerseption()
+{
+	return Perseption;
+}
+void DetectiveStates::setPerseption(float _perseption)
+{
+	Perseption = _perseption;
+}
+
+string DetectiveStates::getAggressionLevel()
+{
+	return aggressionLevel;
+}
+void DetectiveStates::setAggressionLevel(string _Agro)
+{
+	aggressionLevel = _Agro;
+}
+
+//int DetectiveStates::getTotalSkillPoints()
+//{
+//	return TotalSkillPoints;
+//}
+//void DetectiveStates::setTotalSkillPoints(int total)
+//{
+//	if (total < 100)
+//	{
+//
+//	}
+//	TotalSkillPoints = total;
+//}
+
 
 

@@ -5,9 +5,12 @@ using namespace std;
 
 void Intro(void)
 {
-	cout << "Your a retired detective, you spent your last years trying to track down a serial killer before the trail when cold\n";
-	cout << "Until today, you get an email from your old partner, he had sent you some of the old files from the case but along side them were what seemed to be new leads into the case\n";
-	cout << "";
+	cout << "Your a retired detective, you spent your last years trying to track down a serial killer before the trail when cold.\n";
+	cout << "It had been several years since the last murder and although you had kept the reports and paper work, you secretly hoped it was over, that he was dead.\n";
+	cout << "Until today, you get an email from your old partner, he had sent you a few new files that had been passed onto his desk and brushed under a few other files\n";
+	cout << "Many like you also thought he was dead and subsequently belived that this was just a fake report\n";
+	cout << "\n";
+	cin.get();
 }
 void SuspectList(void)
 {
@@ -80,7 +83,16 @@ void SDetails(int &a)
 }
 int main()
 {
-	//DetectiveStates Detective;
+	DetectiveStates Detective;
+
+	cout << "Lets start by deciding on your stats.\n You have a total of 100 skill points\n";
+	cin.get(); // Waits for an input before the next line will run.
+
+	Intro();
+
+
+
+
 	//int INT;
 	//int Char;
 	//float Intim;
@@ -100,26 +112,25 @@ int main()
 
 	//cout << "Charisma: " <<  Detective.getCharisma() << endl << "Intelegence: " << Detective.getINT() << endl << "Intimidation: " << Detective.getIntimidation() << endl;
 
-	int X = 67;
-	int* Pointer = &X;
-	cout << Pointer << endl;
+	/*string result;
+	cout << "There are currently five suspects, we know nothing about,\nIt is on you to collect infomation on these people and fill out a suspect list." << endl;
+	SuspectList();
+	cout << "Would you like to get an in depth understanding of your suspects\nY/N" << endl; 
+	
+	cin >> result;
+	if (result == "Y" || "y")
+	{
+		cout << "What suspect would you like to know about?\n";
+		int a;
+		cin >> a;
+		SDetails(a);
+	}
+	if (result == "N" || "n")
+	{
+		cout << "Okay, lets continue";
+	}*/
+	
 
-	//string result;
-	//cout << "There are currently five suspects, we know nothing about,\nIt is on you to collect infomation on these people and fill out a suspect list." << endl;
-	//SuspectList();
-	//cout << "Would you like to get an in depth understanding of your suspects\nY/N" << endl; // Allows the player to decide if they want to look at the suspects or not -_- currently the "N"||"n" is not being registered.
-	//cin >> result;
-	//if (result == "Y" || result == "y")
-	//{
-	//	cout << "What suspect would you like to know about?\n";
-	//	int a;
-	//	cin >> a;
-	//	SDetails(a);
-	//}
-	//else if (result == "N" || result == "n")
-	//{
-	//	cout << "Okay, lets continue";
-	//}
 }
 //void CharacterCreation()
 //{
