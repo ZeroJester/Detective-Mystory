@@ -84,33 +84,41 @@ void SDetails(int &a)
 int main()
 {
 	DetectiveStates Detective;
+	int INT;
+	int Char;
+	float Intimidation;
+	float Perseption;
+	string aggressionLevel;
 
-	cout << "Lets start by deciding on your stats.\n You have a total of 100 skill points\n";
+	cout << "Lets start your adventure by deciding on your stats.\n";
 	cin.get(); // Waits for an input before the next line will run.
 
+	cout << "What is your Intelect?" << endl;
+	cin >> INT;
+	cout << "How charasmatic are you?" << endl;
+	cin >> Char;
+	cout << "How intimidating are you as a percentage?" << endl;
+	cin >> Intimidation;
+	cout << "How perspective are you?" << endl;
+	cin >> Perseption;
+	cout << "What level of aggression do you have:\nHigh,Medium,Low" << endl;
+	cin >> aggressionLevel;
+
+	Detective.setCharisma(Char);
+	Detective.setINT(INT);
+	Detective.setIntimidation(Intimidation);
+	Detective.setPerseption(Perseption);
+	Detective.setAggressionLevel(aggressionLevel);
+
+	cout << "Your stats are as follows: " << endl;
+	cout << "Charisma: " << Detective.getCharisma() << endl << "Intelegence: " << Detective.getINT() << endl << "Intimidation: " << Detective.getIntimidation() << endl << "Perseption: " << Detective.getPerseption() << endl << "Aggression: " << Detective.getAggressionLevel() << endl;
+	cin.get(); 
 	Intro();
 
 
 
 
-	//int INT;
-	//int Char;
-	//float Intim;
 
-	//cout << "Lets start with a light character creation shall we" << endl;
-
-	//cout << "What is your Intelect?" << endl;
-	//cin >> INT;
-	//cout << "How charasmatic are you?" << endl;
-	//cin >> Char;
-	//cout << "How intimidating are you as a percentage?" << endl;
-	//cin >> Intim;
-
-	//Detective.setCharisma(Char);
-	//Detective.setINT(INT);
-	//Detective.setIntimidation(Intim);
-
-	//cout << "Charisma: " <<  Detective.getCharisma() << endl << "Intelegence: " << Detective.getINT() << endl << "Intimidation: " << Detective.getIntimidation() << endl;
 
 	/*string result;
 	cout << "There are currently five suspects, we know nothing about,\nIt is on you to collect infomation on these people and fill out a suspect list." << endl;
@@ -132,20 +140,3 @@ int main()
 	
 
 }
-//void CharacterCreation()
-//{
-//	DetectiveStates Detective;
-//	int INT;
-//	int Char;
-//	float Intim;
-//	
-//	cout << "Lets start with a light character creation" << endl;
-//
-//	cout << "What is your Intelect?" << endl;
-//	cin >> INT;
-//	cout << "How charasmatic are you?" << endl;
-//	cin >> Char;
-//	cout << "How intimidating are you?" << endl;
-//	cin >> Intim;
-//
-//}

@@ -21,7 +21,18 @@ int DetectiveStates::getINT()
 }
 void DetectiveStates::setINT(int theINT)
 {
-	 INT = theINT;
+	if (theINT >= 100)
+	{
+		INT = 100;
+	}
+	else if (theINT <= 0) 
+	{
+		INT = 0;
+	}
+	else
+	{
+		INT = theINT;
+	}
 }
 
 int DetectiveStates::getCharisma()
@@ -30,7 +41,18 @@ int DetectiveStates::getCharisma()
 }
 void DetectiveStates::setCharisma(int theCharisma)
 {
-	Charisma = theCharisma;
+	if (theCharisma >= 100)
+	{
+		Charisma = 100;
+	}
+	else if (theCharisma <= 0)
+	{
+		Charisma = 0;
+	}
+	else
+	{
+		Charisma = theCharisma;
+	}
 }
 
 float DetectiveStates::getIntimidation()
@@ -39,7 +61,18 @@ float DetectiveStates::getIntimidation()
 }
 void DetectiveStates::setIntimidation(float theIntimidation)
 {
-	IntimidationPercent = theIntimidation;
+	if (theIntimidation >= 100)
+	{
+		IntimidationPercent = 100;
+	}
+	else if (theIntimidation <= 0)
+	{
+		IntimidationPercent = 0;
+	}
+	else
+	{
+		IntimidationPercent = theIntimidation;
+	}
 }
 
 float DetectiveStates::getPerseption()
@@ -48,7 +81,18 @@ float DetectiveStates::getPerseption()
 }
 void DetectiveStates::setPerseption(float _perseption)
 {
-	Perseption = _perseption;
+	if (_perseption >= 100)
+	{
+		Perseption = 100;
+	}
+	else if (_perseption <= 0)
+	{
+		Perseption = 0;
+	}
+	else
+	{
+		Perseption = _perseption;
+	}
 }
 
 string DetectiveStates::getAggressionLevel()
