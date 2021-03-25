@@ -24,12 +24,18 @@
     <ClCompile Include="OverallClues.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Clues.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="DetectiveStates.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="OverallClues.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Clues.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

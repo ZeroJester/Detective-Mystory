@@ -139,11 +139,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Clues.cpp" />
     <ClCompile Include="Detective Mystory.cpp" />
     <ClCompile Include="DetectiveStates.cpp" />
     <ClCompile Include="OverallClues.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Clues.h" />
     <ClInclude Include="DetectiveStates.h" />
     <ClInclude Include="OverallClues.h" />
   </ItemGroup>

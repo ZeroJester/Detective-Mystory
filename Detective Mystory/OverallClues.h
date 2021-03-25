@@ -8,10 +8,12 @@ class OverallClues
 public:
 	OverallClues();
 	
+
+protected:
 	string Location;
 	string Type;
-	bool HasUse;
-	char Quality;
+	string Contense;
+	string Analasis;
+	int baseInfo;
 
 };
-
